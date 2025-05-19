@@ -1,0 +1,7 @@
+.DS_Store
+CLAUDE.md
+.vscode
+.claude
+current_ws_docs
+.ansible
+*.bak
