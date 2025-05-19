@@ -1,0 +1,18 @@
+---
+all:
+  hosts:
+    8000v-1:
+      ansible_host: 3.126.44.99
+    8000v-2:
+      ansible_host: 3.64.75.74
+    8000v-3:
+      ansible_host: 63.176.90.75
+    8000v-4:
+      ansible_host: 63.177.12.44
+    8000v-5:
+      ansible_host: 63.178.59.222
+  vars:
+    ansible_user: autocon
+    ansible_password: autocon
+    ansible_network_os: ios
+    ansible_connection: network_cli
