@@ -169,7 +169,7 @@ decorators:
         type: object
 repositories:
     - name: autocon3-content
-      url: https://github.com/itential/AutoCon3-IAG-Assets.git
+      url: https://github.com/itential/autocon3-iag-assets.git
       reference: main
 services:
     - name: cisco-nxos-vlan-config
