@@ -168,8 +168,8 @@ decorators:
             - password
         type: object
 repositories:
-    - name: autocon3-content
-      url: https://github.com/itential/AutoCon3-IAG-Assets.git
+    - name: autocon3-iag-assets
+      url: https://github.com/itential/autocon3-iag-assets.git
       reference: main
 services:
     - name: cisco-nxos-vlan-config
@@ -178,7 +178,7 @@ services:
       playbooks:
         - cisco-nxos-vlan-config.yaml
       working-directory: playbooks
-      repository: autocon3-content
+      repository: autocon3-iag-assets
       decorator: cisco-nxos-vlan-config-decorator
       runtime:
         inventory:
@@ -189,19 +189,19 @@ services:
       description: Python script that checks port utilization on Arista EOS devices
       filename: arista-eos-port-utilization.py
       working-directory: scripts/arista-eos-port-utilization
-      repository: autocon3-content
+      repository: autocon3-iag-assets
       decorator: arista-eos-port-utilization-decorator
     - name: cisco-ios-xe-bgp-status
       type: python-script
       description: Python script that checks BGP neighbor status on Cisco IOS-XE devices
       filename: cisco-ios-xe-bgp-status.py
       working-directory: scripts/cisco-ios-xe-bgp-status
-      repository: autocon3-content
+      repository: autocon3-iag-assets
       decorator: cisco-ios-xe-bgp-status-decorator
     - name: juniper-junos-ospf-status
       type: python-script
       description: Python script that checks OSPF status on Juniper Junos devices
       filename: juniper-junos-ospf-status.py
       working-directory: scripts/juniper-junos-ospf-status
-      repository: autocon3-content
+      repository: autocon3-iag-assets
       decorator: juniper-junos-ospf-status-decorator
