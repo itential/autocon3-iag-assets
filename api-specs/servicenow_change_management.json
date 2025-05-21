@@ -1244,7 +1244,7 @@
                   "assigned_to": { "type": "string" },
                   "requested_by": { "type": "string" }
                 },
-                "required": ["short_description"]
+                "required": []
               }
             },
             "application/xml": {
